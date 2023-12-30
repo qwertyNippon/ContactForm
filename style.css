@@ -32,7 +32,7 @@ body{
 
 .contact-left-title hr{
     border: none;
-    width: 120px;
+    width: 210px;
     height: 5px;
     background-color: #a363aa;
     border-radius: 10px;
@@ -62,4 +62,34 @@ body{
 
 .contact-inputs::placeholder{
     color: #a9a9a9;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+
+.contact-right img{
+    max-width: 200px;
+}
+
+@media (max-width:800px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right {
+        display: none;
+    }
 }
